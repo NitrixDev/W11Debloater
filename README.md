@@ -64,7 +64,7 @@ The Revert option reinstalls the bloatware and changes your registry keys back t
 # The scheduled tasks that are disabled are
 XblGameSaveTaskLogon, XblGameSaveTask, Consolidator, UsbCeip, DmClient
 
-# These scheduled tasks that are disabled have absolutely no impact on the function of the OS.
+These scheduled tasks that are disabled have absolutely no impact on the function of the OS.
 
 # Bloatware that is removed
 3DBuilder, ActiproSoftware, Alarms, Appconnector, Asphalt8, Autodesk SketchBook, MSN Money, Food And Drink, Health And Fitness, Microsoft News, MSN Sports, MSN Travel, MSN Weather, BioEnrollment, Windows Camera, CandyCrush, CandyCrushSoda, Caesars Slots Free Casino, ContactSupport, CyberLink MediaSuite Essentials, DrawboardPDF, Duolingo, EclipseManager, Facebook, FarmVille 2 Country Escape, Flipboard, Fresh Paint, Get started, iHeartRadio, King apps, Maps, March of Empires, Messaging, Microsoft Office Hub, Microsoft Solitaire Collection, Microsoft Sticky Notes, Minecraft, Netflix, Network Speed Test, NYT Crossword, Office Sway, OneNote, OneConnect, Pandora, People, Phone, Phototastic Collage, PicsArt-PhotoStudio, PowerBI, Royal Revolt 2, Shazam, Skype for Desktop, SoundRecorder, TuneInRadio, Twitter, Windows communications apps, Windows Feedback, Windows Feedback Hub, Windows Reading List, XboxApp, Xbox Game CallableUI, Xbox Identity Provider, Zune Music, Zune Video.
