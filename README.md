@@ -1,8 +1,3 @@
-# Windows11Debloater
-made-with-powershell License: MIT
-
-Script/Utility/Application to debloat Windows 11, to remove Windows pre-installed unnecessary applications, stop some telemetry functions, stop Cortana from being used as your Search Index, disable unnecessary scheduled tasks, and more...
-
 # Disclaimer
 WARNING: I do NOT take responsibility for what may happen to your system! Run scripts at your own risk! Also, other variants of this repo are not technically "new" versions of this, but they are different in their own respective ways. There are some sites saying that other projects are "new" versions of this, but that is inaccurate.
 
@@ -33,7 +28,7 @@ On the prompt, change to the directory where you extracted the files:   e.g. - c
 Next, to run either script, enter in the following:
 e.g. - .\Windows11SysPrepDebloater.ps1 -Sysprep -Debloat -Privacy
 
-Sysprep, Interactive, and GUI Application
+#Sysprep, Interactive, and GUI Application
 There are now 3 versions of Windows11Debloater - There is an interactive version, a GUI app version, and a pure silent version.
 
 Windows11SysPrepDebloater.ps1 -> The silent version now utilizes the switch parameters: -Sysprep, -Debloat -Privacy. The silent version can be useful for deploying MDT Images/sysprepping or any other way you deploy Windows 10. This will work to remove the bloatware during the deployment process.
@@ -42,7 +37,7 @@ Windows11Debloater.ps1 -> This interactive version is what it implies - a Window
 
 Windows11DebloaterGUI.ps1 -> There is now a GUI Application named Windows11DebloaterGUI.ps1 with buttons to perform all of the functions that the scripts do. This is better for the average user who does not want to work with code, or if you'd prefer to just see an application screen.
 
-Switch Parameters
+# Switch Parameters
 There are 3 switch parameters in the Windows11SysPrepDebloater.ps1 script.
 
 -SysPrep, which runs the command within a function: get-appxpackage | remove-appxpackage. This is useful since some administrators need that command to run first in order for machines to be able to properly provision the apps for removal.
@@ -51,31 +46,28 @@ There are 3 switch parameters in the Windows11SysPrepDebloater.ps1 script.
 
 -Privacy, adds and/or changes registry keys to stop some telemetry functions, stops Cortana from being used as your Search Index, disables "unnecessary" scheduled tasks, and more.
 
-# This script will remove the bloatware from Windows 11 when using Remove-AppXPackage/Remove-AppXProvisionedPackage, and then delete specific registry keys that are were not removed beforehand. For best results, this script should be run before a user profile is configured, otherwise, you will likely see that apps that should have been removed will remain, and if they are removed you will find broken tiles on the start menu.
+This script will remove the bloatware from Windows 11 when using Remove-AppXPackage/Remove-AppXProvisionedPackage, and then delete specific registry keys that are were not removed beforehand. For best results, this script should be run before a user profile is configured, otherwise, you will likely see that apps that should have been removed will remain, and if they are removed you will find broken tiles on the start menu.
 
-These registry keys are
+# These registry keys are
 EclipseManager, ActiproSoftwareLLC, Microsoft.PPIProjection, Microsoft.XboxGameCallableUI
 
-# You can choose to either 'Debloat' or 'Revert'. Depending on your choice, either one will run specific code to either debloat your Windows 10 machine.
+You can choose to either 'Debloat' or 'Revert'. Depending on your choice, either one will run specific code to either debloat your Windows 10 machine.
 
-The Debloat switch choice runs the following functions
+# The Debloat switch choice runs the following functions
 Debloat, Remove-Keys, Protect-Privacy, Stop-EdgePDF (If chosen)
 
-The Revert switch choice runs the following functions
+# The Revert switch choice runs the following functions
 Revert-Changes, Enable-EdgePDF
 
-# The Revert option reinstalls the bloatware and changes your registry keys back to default.
+The Revert option reinstalls the bloatware and changes your registry keys back to default.
 
 # The scheduled tasks that are disabled are
 XblGameSaveTaskLogon, XblGameSaveTask, Consolidator, UsbCeip, DmClient
 
 # These scheduled tasks that are disabled have absolutely no impact on the function of the OS.
 
-Bloatware that is removed
+# Bloatware that is removed
 3DBuilder, ActiproSoftware, Alarms, Appconnector, Asphalt8, Autodesk SketchBook, MSN Money, Food And Drink, Health And Fitness, Microsoft News, MSN Sports, MSN Travel, MSN Weather, BioEnrollment, Windows Camera, CandyCrush, CandyCrushSoda, Caesars Slots Free Casino, ContactSupport, CyberLink MediaSuite Essentials, DrawboardPDF, Duolingo, EclipseManager, Facebook, FarmVille 2 Country Escape, Flipboard, Fresh Paint, Get started, iHeartRadio, King apps, Maps, March of Empires, Messaging, Microsoft Office Hub, Microsoft Solitaire Collection, Microsoft Sticky Notes, Minecraft, Netflix, Network Speed Test, NYT Crossword, Office Sway, OneNote, OneConnect, Pandora, People, Phone, Phototastic Collage, PicsArt-PhotoStudio, PowerBI, Royal Revolt 2, Shazam, Skype for Desktop, SoundRecorder, TuneInRadio, Twitter, Windows communications apps, Windows Feedback, Windows Feedback Hub, Windows Reading List, XboxApp, Xbox Game CallableUI, Xbox Identity Provider, Zune Music, Zune Video.
 
-Quick download link
-iwr -useb https://git.io/debloat|iex
-
-Allowlist and Blocklist
+# Allowlist and Blocklist
 There may be some confusion, but when using the Allowlist/Blocklist, the checkmark means it is on the blocklist, and that it will be removed.
