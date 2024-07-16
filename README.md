@@ -1,3 +1,7 @@
+# Windows11Debloater
+Script/Utility/Application to debloat Windows 10, to remove Windows pre-installed unnecessary applications, stop some telemetry functions, stop Cortana from being used as your Search Index, disable unnecessary scheduled tasks, and more...
+https://microsoft.com/PowerShell https://opensource.org/licenses/MIT
+
 ## Disclaimer
 WARNING: I do NOT take responsibility for what may happen to your system! Run scripts at your own risk! Also, other variants of this repo are not technically "new" versions of this, but they are different in their own respective ways. There are some sites saying that other projects are "new" versions of this, but that is inaccurate.
 
